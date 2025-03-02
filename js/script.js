@@ -29,7 +29,7 @@ for(let btn of buttons){
             }
         }
         if(allButtonDisabled){
-            alert("congrates you have completed all the correct task")
+            alert("congrates!!! you have completed all the current task")
         }
     } )
 }
@@ -50,7 +50,7 @@ document.getElementById("btn-1").addEventListener("click",function(event){
         hours = hours < 10 ? "0" + hours : hours;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        p.innerText = `  you have complete the task fix ${fixMobile} button issue at Current Time: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
+        p.innerText = `  you have complete the task fix ${fixMobile} button issue at: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
     }
     convertedTime();
 
@@ -73,7 +73,7 @@ document.getElementById("btn-2").addEventListener("click",function(event){
         hours = hours < 10 ? "0" + hours : hours;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        p.innerText = `  you have complete the task fix ${fixMobile} button issue at Current Time: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
+        p.innerText = `  you have complete the task fix ${fixMobile} button issue at : ${nowTime.getHours()}: ${minutes}: ${seconds}`;
     }
     convertedTime();
 
@@ -96,7 +96,7 @@ document.getElementById("btn-3").addEventListener("click",function(event){
         hours = hours < 10 ? "0" + hours : hours;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        p.innerText = `  you have complete the task fix ${fixMobile} button issue at Current Time: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
+        p.innerText = `  you have complete the task fix ${fixMobile} button issue at: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
     }
     convertedTime();
 
@@ -119,7 +119,7 @@ document.getElementById("btn-4").addEventListener("click",function(event){
         hours = hours < 10 ? "0" + hours : hours;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        p.innerText = `  you have complete the task fix ${fixMobile} button issue at Current Time: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
+        p.innerText = `  you have complete the task fix ${fixMobile} button issue at: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
     }
     convertedTime();
 
@@ -142,7 +142,7 @@ document.getElementById("btn-5").addEventListener("click",function(event){
         hours = hours < 10 ? "0" + hours : hours;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        p.innerText = `  you have complete the task fix ${fixMobile} button issue at Current Time: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
+        p.innerText = `  you have complete the task fix ${fixMobile} button issue at : ${nowTime.getHours()}: ${minutes}: ${seconds}`;
     }
     convertedTime();
 
@@ -165,11 +165,19 @@ document.getElementById("btn-6").addEventListener("click",function(event){
         hours = hours < 10 ? "0" + hours : hours;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        p.innerText = `  you have complete the task fix ${fixMobile} button issue at Current Time: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
+        p.innerText = `  you have complete the task fix ${fixMobile} button issue at: ${nowTime.getHours()}: ${minutes}: ${seconds}`;
     }
     convertedTime();
 
     container.appendChild(p);
 });
+document.getElementById("Clear-history").addEventListener("click", function(event){
+    event.preventDefault();
+    document.getElementById("completed-container").style.display ="none";
+})
+document.getElementById("big-button").addEventListener("click", function(event){
+    event.preventDefault();
+    window.location.href="./main.html";
+})
 
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'poppins', sans-serif;
+    }
+</style>
+</head>
+<body class="bg-slate-200">
+    <header>
+        <nav class="container mx-auto">
+           
+            <div class="flex justify-between p-2 rounded bg-white mx-auto">
+                <div class="flex">
+                    <img class="w-8 border border-dotted border-gray-400" src="./images/logo.png" alt="">
+                    <h1 class="text-2xl font-light">Dev <span class="font-bold text-2xl">Board</span></h1>
+                </div>
+          <button id="back-button" class="btn bg-blue-600 border border-none text-white">Back to Desk</button>
+            </div>
+            </nav> 
+    </header>
+<section class=" container mx-auto"> 
+    <h1 class="font-bold text-2xl flex justify-center text-center">Blogs</h1>
+       <div class=" container mx-auto bg-white p-4 mb-4 rounded-md ">
+
+    <h2 class="mx-auto font-semibold my-2 ">
+        Question-1: What are the different ways to select an element in the DOM?</h2>
+    <p class="font-light text-xs">There are the different ways to select an element in the dom .For example
+        getElementById,querySelectorAll, querySelector, getElementsByClassName, getElementsByTagName.
+    </p>
+</div>
+       <div class=" container mx-auto bg-white p-4 rounded-md mb-4  ">
+
+    <h2 class="mx-auto font-semibold my-2 ">
+        Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+    <p class="font-light text-xs">
+        innerHtml returns all text, including html tags.
+        textContents is all text contained by an element and all its children that are for formatting purposes only.
+        innerText returns all text contained by an element and all its child elements.
+    </p>
+</div>
+       <div class=" container mx-auto bg-white p-4 rounded-md mb-4  ">
+
+    <h2 class="mx-auto font-semibold my-2 ">
+        Question-3: What is event delegation in the DOM?</h2>
+    <p class="font-light text-xs">
+        Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and every similar element, we can add an event listener to a parent element and call an event on a particular target using the .target property of the event object
+    </p>
+</div>
+       <div class=" container mx-auto bg-white p-4 rounded-md mb-4  ">
+
+    <h2 class="mx-auto font-semibold my-2 ">
+        Question-4: What is event bubbling in the DOM?
+
+    </h2>
+    <p class="font-light text-xs">
+        It allows parent elements to respond to events triggered by their child elements.  it works Execution Order, Listener Behavior,Event Triggering,Event Capturing,Event Bubbling.
+    </p>
+</div>
+       <div class=" container mx-auto bg-white p-4 rounded-md mb-4  ">
+
+    <h2 class="mx-auto font-semibold my-2 ">
+        Question-5: How do you create, add, and remove elements using JavaScript?
+
+    </h2>
+    <p class="font-light text-xs">
+        To create an element in JavaScript,I use document.createElement() and set its content using properties like textContent or innerHTML. To add the element to the webpage, use appendChild() to add it at the end of a parent element or insertBefore() to place it before another element. To remove an element, use removeChild() on its parent or call remove() directly on the element.
+    </p>
+</div>
+</section>
+<script src="./js/script.js"></script>
+    <script src="./js/back.js"></script>
+</body>
+</html>
